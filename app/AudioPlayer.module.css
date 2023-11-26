@@ -3,10 +3,11 @@
     --primary: rgb(133, 241, 166);
     --secondary: yellow;
 
-    align-items: center;  
+align-items: center;  
   display:flex;
   justify-content: center;
-  width: 700px; 
+  margin: auto;
+  width: 500px;
  
 }
 
@@ -20,6 +21,7 @@ font-size: 18px;
 cursor: pointer;
 color: rgb(226, 32, 210);
 box-shadow: white;
+margin:5px;
 }
 
 .forwardBackward:hover{
@@ -149,9 +151,9 @@ cursor: pointer;
 }
 
 .customAudio {
-    width: 70%;
+    
     margin-bottom: 10px;
-    /* Add more styles as needed */
+    width:200px;
   
     /* Example hover effect */
     transition: background-color 0.3s ease-in-out; /* Smooth transition for background color */
@@ -159,4 +161,21 @@ cursor: pointer;
   
   .customAudio:hover {
     background-color: #3d91f0; /* Change background color on hover */
+  }
+
+  @media (max-width: 600px) {
+    .audioPlayer {
+    
+      align-items: center;  
+  display:flex;
+  justify-content: center;
+  margin: auto;
+  width: 370px;;
+    }
+    .customAudio {
+    
+        margin-bottom: 10px;
+        width:200px;
+      
+      }
   }

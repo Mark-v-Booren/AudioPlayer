@@ -59,10 +59,8 @@ const AudioPlayer = ({playlist}) => {
         <audio  ref ={audioRef} controls className={styles.customAudio}>
         <source src={playlist[currentTrack]} type='audio/mp3'/>
         </audio>
-        {/* <button onClick={playPauseHandler}className={styles.forwardBackward}><FaPlay className={styles.play} /></button> */}
+
         <button onClick={prevTrackHandler} className={styles.forwardBackward}> <FaLongArrowAltLeft/>PREV</button>
-
-
 
         {/* <button className={styles.forwardBackward}> <FaLongArrowAltRight/> 30</button>
         <button className={styles.playPause} onClick={togglePlayPause} >{ isPlaying ? <FaPlay className={styles.play} /> : <FaPause/>}</button>
