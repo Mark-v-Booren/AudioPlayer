@@ -1,4 +1,4 @@
-:root {
+/* :root {
   --max-width: 1100px;
   --border-radius: 12px;
   --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
@@ -83,6 +83,7 @@ html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
+ 
 }
 
 body {
@@ -104,4 +105,22 @@ a {
   html {
     color-scheme: dark;
   }
+} */
+
+body{
+background-color: rgb(244, 252, 252);
+
+animation: colorChangeAnimation 20s linear infinite alternate; /* Adjust duration and other properties */
+}
+
+@keyframes colorChangeAnimation {
+10% {
+  background-color: #1e4e34; /* Start color */
+}
+70% {
+  background-color:rgb(34, 30, 30); /* End color */
+}
+100% {
+  background-color:rgb(121, 117, 117); /* End color */
+}
 }

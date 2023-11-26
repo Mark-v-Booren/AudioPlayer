@@ -1,6 +1,6 @@
 .audioPlayer{
 
-    --primary: rgb(247, 140, 158);
+    --primary: rgb(133, 241, 166);
     --secondary: yellow;
 
     align-items: center;  
@@ -16,8 +16,10 @@
     display: flex;
     align-items: center;
 font-family: monospace;
-font-size: 16px;
-cursor: pointer
+font-size: 18px;
+cursor: pointer;
+color: rgb(226, 32, 210);
+box-shadow: white;
 }
 
 .forwardBackward:hover{
@@ -145,3 +147,16 @@ cursor: pointer;
     background-color: var(--selectedKnobby);
 
 }
+
+.customAudio {
+    width: 70%;
+    margin-bottom: 10px;
+    /* Add more styles as needed */
+  
+    /* Example hover effect */
+    transition: background-color 0.3s ease-in-out; /* Smooth transition for background color */
+  }
+  
+  .customAudio:hover {
+    background-color: #3d91f0; /* Change background color on hover */
+  }

@@ -36,6 +36,9 @@ const AudioPlayer = ({playlist}) => {
   setCurrentTrack((prevTrack)=> (prevTrack + 1 ) % playlist.length)
  };
 
+ const prevTrackHandler = () => {
+  setCurrentTrack((prevTrack)=> (prevTrack - 1 ) % playlist.length)
+ };
   // const togglePlayPause=()=>{
 
   //   const preValue = isPlaying;
@@ -52,11 +55,13 @@ const AudioPlayer = ({playlist}) => {
 
   return (
     <div className={styles.audioPlayer}>
-        <audio  ref ={audioRef} controls >
-          <source src={playlist[currentTrack]} type='audio/mp3'/>
+      <button onClick={nextTrackHandler} className={styles.forwardBackward}> <FaLongArrowAltRight/>NEXT</button>
+        <audio  ref ={audioRef} controls className={styles.customAudio}>
+        <source src={playlist[currentTrack]} type='audio/mp3'/>
         </audio>
-        <button onClick={playPauseHandler}>play</button>
-        <button onClick={nextTrackHandler}> Next</button>
+        {/* <button onClick={playPauseHandler}className={styles.forwardBackward}><FaPlay className={styles.play} /></button> */}
+        <button onClick={prevTrackHandler} className={styles.forwardBackward}> <FaLongArrowAltLeft/>PREV</button>
+
 
 
         {/* <button className={styles.forwardBackward}> <FaLongArrowAltRight/> 30</button>
